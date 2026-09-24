@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flip.css">
+</head>
+<div id="order-popup">
+
+    <div class="order-popup-box">
+
+        <img
+            src="ekkant-checkmark-22516_512.gif"
+            class="order-gif"
+        >
+
+        <h2>Order Placed!</h2>
+
+        <p id="order-message">
+            Your order has been placed successfully.
+        </p>
+
+        <button id="close-order-popup">
+            Close
+        </button>
+
+    </div>
+
+</div>
+<body>
+
+    <div class="main-container">
+
+        <!-- navbar section -->
+        <nav>
+            <div class="logo-nav">
+                <div class="logo-bg">
+                    <img class="logo-img1" src="https://rukminim2.flixcart.com/fk-p-flap/52/44/image/d2ecfddf891a3922.png?q=60">
+                    <img class="logo-img2" src="	https://rukminim2.flixcart.com/fk-p-flap/92/36/image/31f7e3af490c225f.png?q=60">
+               </div>
+            </div>
+            
+            <div class="nav2">
+                <div>
+                    <input type="text" class="input1" placeholder="Search for Products, Brands and More">
+                </div>
+    
+                <div class="btn-div">
+
+                    <div class="login-wrapper">
+                    
+                    <button class="btn1" id="log-btn" type="button">
+                        <img class="profile-icon" src="profile.png">
+                        <p>Login</p>
+                        <img class="icon" src="right-arrow.png">
+                    </button>
+
+                    <div class="box" id="box1"> 
+                    <div class="divs">
+                        <img class="drop-icons" src="profile.png">
+                        <p>My Profile</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="shopping-cart.png">
+                        <p>Orders</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="heart.png">
+                        <p>Wishlist</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="seller.png">
+                        <p>Become a Seller</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="gift.png">
+                        <p>Rewards</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="gift.png">
+                        <p>Gift Cards</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="notification.png">
+                        <p>Notifications</p>
+                    </div>                        
+                    <div class="divs">
+                        <img class="drop-icons" src="customer-service-headset.png">
+                        <p>Customer Care</p>
+                    </div>                        
+                   
+                    </div>
+                    </div>  
+
+
+
+                    <button class="btn1" id="bt2" type="submit">
+                        <p>More</p>
+                        <img class="icon" src="right-arrow.png">
+                    </button>
+                    <!-- <button class="btn" type="submit">More</button> -->
+                    <button class="btn1" id="cart" type="submit">Cart</button>
+                </div>
+            </div>   
+        </nav>
+    
+        <!-- categories icons -->
+        <div class="cat-icon-div">
+            <img id="for-you" src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/all.svg">
+            <img id="fashion" src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/fashion.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/mobiles.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/electronics.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/beauty.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/toy.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/food.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/sport.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/books.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/auto-new.svg">
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/furniture.svg">
+        </div>
+    
+        <!-- image slider -->
+         <div class="slider-window">
+             <div class="slide-div" id="slide-cont">
+                <img class="slide-img" src="https://rukminim2.flixcart.com/fk-p-flap/2000/980/image/92ded5ff8230ef73.png?q=60">  
+            </div>
+         </div>
+    
+            <div id="cart-page" class="carts-page">
+
+            <div id="cart-container"></div>
+
+            <div id="price-detal">
+            <p>Price Details</p>
+            </div>
+
+
+            </div>
+    
+        <!-- suggested for you  section-->
+         <section>
+             <h2 id="heading">Suggested for you</h2>
+           
+    
+                 <div id="suggest-div">
+                 </div>
+                
+           
+         </section>
+
+         <!-- product detail page -->
+
+            <div id="product-detail" class="product-detail">
+
+                    <div id="prod_img_div">
+                        <img id="detail-image">
+                    </div>
+
+                    <div>
+                        <h1 id="detail-name" class="detailed-name"></h1>
+                        <h2 id="detail-price"></h2>
+                        
+                        <div >
+                            <p class="high-title">Product Highlights</p>
+                            <div class="prod-highlight" >
+                                <p class="prod-high">Outer material Mesh</p>
+                                <p class="prod-high">Occasion Sports</p>
+                                <p class="prod-high">Sports  Shoes</p>
+                            </div>
+                            <div class="prod-highlight" >
+                                <p class="prod-high">Light Weight</p>
+                                <p class="prod-high">Comfort</p>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="prod-icon-div">
+                            <div>
+                                <img class="prod-icon" src="commercial.png">
+                                <p class="pro-icon-p">10 Days Return</p>
+                            </div>
+                            <div>
+                                <img class="prod-icon" src="rupee.png">
+                                <p class="pro-icon-p">Cash On Delivery</p>
+                            </div>
+                            <div>
+                                <img class="prod-icon" src="quality-control.png">
+                                <p class="pro-icon-p">Flipkart Assured</p>
+                            </div>
+                        </div>
+                
+                    <div class="prod-btn-div">
+
+                        <button class="prod-cart-btn" id="detail-cart-btn">Add to Cart</button>
+                        <button class="prod-buy-btn" id="detail-buy-btn">Buy Now</button>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
